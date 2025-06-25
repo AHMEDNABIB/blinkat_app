@@ -119,6 +119,69 @@ class CartScreen extends StatelessWidget {
           SizedBox(
             height: 30,
           ),
+          Row(
+            children: [
+              SizedBox(
+                width: 20,
+              ),
+              UiHelper.CustomText(
+                text: "BestSeller",
+                color: Color(0XFF000000),
+                fontweight: FontWeight.bold,
+                fontsize: 16,
+                fontfamily: "bold",
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Row(
+            children: [
+              SizedBox(
+                width: 20,
+              ),
+              Stack(
+                children: [
+                  UiHelper.CustomImage(img: "milk.png"),
+                  Padding(
+                    padding: EdgeInsets.only(top: 95, left: 66),
+                    child: UiHelper.CustomButton(
+                      () {},
+                    ),
+                  )
+                ],
+              ),
+              SizedBox(
+                width: 20,
+              ),
+              Stack(
+                children: [
+                  UiHelper.CustomImage(img: "potato.png"),
+                  Padding(
+                    padding: EdgeInsets.only(top: 95, left: 66),
+                    child: UiHelper.CustomButton(
+                      () {},
+                    ),
+                  )
+                ],
+              ),
+              SizedBox(
+                width: 20,
+              ),
+              Stack(
+                children: [
+                  UiHelper.CustomImage(img: "tomato.png"),
+                  Padding(
+                    padding: EdgeInsets.only(top: 95, left: 66),
+                    child: UiHelper.CustomButton(
+                      () {},
+                    ),
+                  )
+                ],
+              )
+            ],
+          )
         ],
       ),
     );
